@@ -33,7 +33,7 @@ mkdir log21
 ### Supervised training over all data in MultiWOZ2.1:
 You can train the end-to-end model with all training data in MultiWOZ2.1 
 ```
-bash shell_scripts/train.sh $GPU
+bash shell_scripts/pretrain_turn.sh $GPU 100
 ```
 You can change other parameters such as batch size and learning rate in this `.sh` file. For instance, if your GPU has enough memory, you can increase the batch size and decrease the gradient accumulation steps.
 
